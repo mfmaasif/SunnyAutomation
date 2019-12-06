@@ -1,0 +1,135 @@
+{
+	"Environment": {
+		"dev": "https://staging.node.goranku.com/",
+		"stag": "https://staging.node.goranku.com/",
+		"prod": "https://online.nebraska.edu"
+	},
+	"homeUrl": "https://staging.node.goranku.com/",
+	"applyNowUrl": "https://staging.node.goranku.com/schools",
+	"Configurations":
+	{
+		"institutions":["Winona Campus","Twin Cities Campus","Rochester Campus","Online"],
+		"degrees": [{
+			"level": "Certificate",
+			"subjects": ["Business","Communication"]
+			},
+			{
+				"level": "Bachelor's",
+				"subjects": ["Technology","Communication"]
+			}
+		]
+	},
+	"AppPages":{
+		"Home":
+		{
+			"elements":[{
+				"name":"logo",
+				"xpath": "//a[@id='ranku-logo']"
+				},
+				{"name":"applyNow",
+					"xpath":"//a[text()='Apply Now']"
+				},
+				{"name":"requestInfo",
+					"xpath":"//a[text()='Request Info']"
+				},
+				{"name":"degreeFilter",
+					"xpath":"//select[@aria-label='Search Degree Filter']"
+				},
+				{"name":"wantToLearn",
+					"xpath":"//input[@placeholder='What do you want to learn?']"
+				},
+				{"name":"search",
+					"xpath":"//button[text()='Search']"
+				},
+				{"name":"offerings",
+					"xpath":"//li[text()=<value>']"
+				},
+				{"name":"subjects",
+					"xpath":"//figcaption[text()=<value>']"
+				},
+				{"name":"institutions",
+					"xpath":"//a[text()=<value>']"
+				}
+			]
+		},
+		"RFI":
+		{
+			"elements":[
+				{
+					"name": "fieldLabel",
+					"xpath": "./../label"
+				},
+				{
+					"name": "btnSubmit",
+					"xpath": "//button[text()='Send Information']"
+				},
+				{
+					"name": "btnCancel",
+					"xpath": "//button[text()='Cancel']"
+				},
+				{
+					"name": "fullname",
+					"label": "Your Name:",
+					"required":true,
+					"xpath": "//input[@id='rfiForm_input_fullName_0']",
+					"data": "Kovida"
+				},
+				{
+					"name": "email",
+					"label": "Your email address:",
+					"required":true,
+					"xpath": "//input[@id='rfiForm_input_email_1']",
+					"data": "Kovidag@yahoo.com"
+				},
+				{
+					"name": "phone",
+					"label": "Your phone number (optional):",
+					"required":false,
+					"xpath": "//input[@id='rfiForm_input_phone_2']",
+					"data": "0714763037"
+				},
+				{
+					"name": "country",
+					"label": "Select your country",
+					"required":false,
+					"xpath": "//select[@id='rfiForm_select_originCountry_3']",
+					"data": "LK"
+				},
+				{
+					"name": "isMilitary",
+					"label": "Have you ever served in the military?",
+					"required":false,
+					"xpath": "//select[@id='rfiForm_select_isMilitary_6']",
+					"values": ["No","Yes"]
+				},
+				{
+					"name": "educationLevel",
+					"label": "Highest level of education:",
+					"required":true,
+					"xpath": "//select[@id='rfiForm_select_educationLevel_5']",
+					"values": ["High School Diploma/GED","Some College Credits","Associates","Bachelors","Masters","Doctorate","Other"]
+				},
+				{
+					"name": "degreeLevel",
+					"label": "What type of degree do you want to earn?",
+					"required":true,
+					"xpath": "//select[@id='rfiForm_select_DegreeType_7']"
+				},
+				{
+					"name": "field",
+					"label": "What field do you want to study?",
+					"required":true,
+					"xpath": "//select[@id='rfiForm_select_FieldType_8']",
+					"data": "Math & Computer Science"
+				},
+				{
+					"name": "program",
+					"label": "What program are you interested in?",
+					"required":true,
+					"xpath": "//select[@id='rfiForm_select_ProgramType_9']",
+					"data": "Cybersecurity, M.S. at Saint Mary's University of Minnesota"
+				}
+			]
+		}
+	}
+}

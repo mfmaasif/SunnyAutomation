@@ -1,0 +1,46 @@
+{
+  "TestDataSets": [
+      {
+        "testcaseID": "TC_RFI_01",
+        "degreeLevel": "Master's",
+        "fieldOfStudy": "Business",
+        "intrestProgram": "Accounting, M.S. Test at Northern Illinois University",
+        "firstName": "AutomationSuit",
+        "lastName": "School-Program-Test",
+        "emailAddress": "AutomationTestSuit",
+        "phoneNumber": "0190151003",
+        "country": "United States of America",
+        "zipcode": "32751",
+        "levelOfEducation": "Associates",
+        "pursuingDegree": "Complete Degree",
+        "question": "Previous or Transfer Credits",
+        "contactCheckBox": "true",
+        "WAS": "true",
+        "additionalProgram":"null"
+      },
+      {
+        "testcaseID": "TC_RFI_02",
+        "degreeLevel": "Master's",
+        "fieldOfStudy": "Science, Technology, Engineering and Math",
+        "intrestProgram": "Master of Public Health at Northern Illinois University",
+        "DBProgramName": "Master of Public",
+        "firstName": "AutomationTest",
+        "lastName": "School-Program-Test",
+        "emailAddress": "AutomationTestSuit",
+        "phoneNumber": "0190151003",
+        "country": "Sri Lanka",
+        "zipcode": "",
+        "levelOfEducation": "Some College Credits",
+        "pursuingDegree": "Career Advancement",
+        "question": "Previous or Transfer Credits",
+        "contactCheckBox": "true",
+        "WAS": "false",
+        "additionalProgram":"Master of Science in Digital Marketing"
+      },
+      {
+         "testcaseID": "TC_RFI_03",
+         "degreeLevel": "Bachelor's",
+         "SearchText": "Art"
+      }
+    ]
+}

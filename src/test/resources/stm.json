@@ -1,0 +1,146 @@
+{
+	"Environment": {
+		"dev": "https://dev.stm.goranku.com",
+		"stag": "https://staging.stm.goranku.com ",
+		"prod": "https://programs.smumn.edu/"
+	},
+	"homeUrl": "https://www.smumn.edu/",
+	"applyNowUrl": "https://saintmarys.force.com/onlineapp/TX_SiteLogin",
+	"Configurations":
+	{
+		"institutions":["Winona Campus","Twin Cities Campus","Rochester Campus","Online"],
+		"degrees": [{
+			"level": "Certificate",
+			"subjects": ["Business","Communication"]
+			},
+			{
+				"level": "Bachelor's",
+				"subjects": ["Technology","Communication"]
+			}
+		]
+	},
+	"AppPages":{
+		"Home":
+		{
+			"elements":[{
+				"name":"logo",
+				"xpath": "//a[@class='primary-logo']"
+				},
+				{"name":"applyNow",
+					"xpath":"//a[text()='Apply Now']"
+				},
+				{"name":"requestInfo",
+					"xpath":"//button[text()='Request Info']"
+				},
+				{"name":"degreeFilter",
+					"xpath":"//select[@aria-label='Search Degree Filter']"
+				},
+				{"name":"wantToLearn",
+					"xpath":"//input[@placeholder='What do you want to learn?']"
+				},
+				{"name":"search",
+					"xpath":"//button[text()='Search']"
+				},
+				{"name":"offerings",
+					"xpath":"//li[text()=<value>']"
+				},
+				{"name":"subjects",
+					"xpath":"//figcaption[text()=<value>']"
+				},
+				{"name":"institutions",
+					"xpath":"//a[text()=<value>']"
+				}
+			]
+		},
+		"RFI":
+		{
+			"elements":[
+				{
+					"name": "fieldLabel",
+					"xpath": "./../legend"
+				},
+				{
+					"name": "btnSubmit",
+					"xpath": "//button[text()='Submit request']"
+				},
+				{
+					"name": "btnCancel",
+					"xpath": "//div[@class='modal visible rfi']//div[@role='button']"
+				},
+				{
+					"name": "firstName",
+					"label": "First Name",
+					"required":true,
+					"xpath": "//input[@id='firstName']",
+					"data": "Kovida"
+				},
+				{
+					"name": "lastName",
+					"label": "Last Name",
+					"required":true,
+					"xpath": "//input[@id='lastName']",
+					"data": "Guruge"
+				},
+				{
+					"name": "email",
+					"label": "Email Address",
+					"required":true,
+					"xpath": "//input[@id='email']",
+					"data": "Kovidag@yahoo.com"
+				},
+				{
+					"name": "phone",
+					"label": "Phone Number",
+					"required":true,
+					"xpath": "//input[@id='phone']",
+					"data": "0714763037"
+				},
+				{
+					"name": "country",
+					"label": "Country",
+					"required":true,
+					"xpath": "//select[@id='countryCode']",
+					"data": "LK"
+				},
+				{
+					"name": "isMilitary",
+					"label": "Have you served in the military?",
+					"required":false,
+					"xpath": "//select[@id='militaryLevel']",
+					"values": ["No","Yes"]
+				},
+				{
+					"name": "educationLevel",
+					"label": "Highest Level of Education",
+					"required":true,
+					"xpath": "//select[@id='educationLevel']",
+					"values": ["High School Diploma/GED","Some College Credits","Associates","Bachelors","Masters","Doctorate","Other"]
+				},
+				{
+					"name": "degreeLevel",
+					"label": "What type of degree do you want to earn?",
+					"required":true,
+					"xpath": "//select[@id='degreeLevel']"
+				},
+				{
+					"name": "field",
+					"label": "What field do you want to study?",
+					"required":true,
+					"xpath": "//select[@id='field']",
+					"data": "Math & Computer Science"
+				},
+				{
+					"name": "program",
+					"label": "What program are you interested in?",
+					"required":true,
+					"xpath": "//select[@id='program']",
+					"data": "Cybersecurity, M.S. at Saint Mary's University of Minnesota"
+				},
+				{
+					"name": "consent",
+					"xpath": "//input[@id='consent']"
+				}
+			]
+		}
+	}
+}

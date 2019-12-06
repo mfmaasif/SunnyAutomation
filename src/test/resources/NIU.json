@@ -1,0 +1,264 @@
+{
+  "Environment": {
+    "dev": "https://dev.niu.goranku.com",
+    "stag": "",
+    "prod": ""
+  },
+  "homeUrl": "",
+  "applyNowUrl": "",
+  "Configurations":
+  {
+    "institutions":["Winona Campus","Twin Cities Campus","Rochester Campus","Online"],
+    "degrees": [
+      {
+      "level": "certificate",
+      "subjects": ["Business","Communication"]
+      },
+      {
+        "level": "bachelor",
+        "subjects": ["Technology","Communication"]
+      },
+      {
+        "level": "master",
+        "subjects": ["Technology","Communication"]
+      },
+      {
+        "level": "doctoral",
+        "subjects": ["Technology","Communication"]
+      },
+      {
+        "level": "endorsement",
+        "subjects": ["Technology","Communication"]
+      },
+      {
+        "level": "accelerated-integrated",
+        "subjects": ["Technology","Communication"]
+      }
+    ]
+  },
+  "AppPages":{
+    "Home":
+    {
+      "elements":[
+        {"name": "fieldLabel",
+          "xpath": "./../label"
+        },
+        {"name":"logo",
+         "xpath": "//a[text()='Northern Illinois University']"
+        },
+        {"name":"World Class Education",
+          "xpath": "//h1[text()='World Class Education']",
+          "fontfamily": "\"Times New Roman\", Times, serif",
+          "fontsize": "50.1333px",
+          "fontcolor":"Times New Roman"
+        },
+        {
+          "name":"requestInfo",
+          "xpath": "//button[text()='Request Info']"
+        },
+        {
+          "name": "title",
+          "xpath": "//title[text()='Degree Programs | Northern Illinois University']"
+        },
+        {"name":"applyNow",
+          "xpath":"//a[text()='Apply Now']"
+        },
+        {"name":"requestInfo",
+          "xpath":"//button[text()='Request Info']"
+        },
+        {"name":"degreelink",
+          "xpath":"//a[text()='Degrees']"
+        },
+        {"name":"degreeLevelFilter",
+          "xpath":"//select[@aria-label='Search Degree Filter']"
+        },
+        {"name":"whatyouliketostudy",
+          "xpath":"//input[@aria-label='Search Northern Illinois University Degree Programs']"
+        },
+        {"name":"search",
+          "xpath":"//button[text()='Search']"
+        },
+        {"name":"offerings",
+          "xpath":"//li[text()=<value>']"
+        },
+        {"name":"subjects",
+          "xpath":"//figcaption[text()=<value>']"
+        },
+        {"name":"institutions",
+          "xpath":"//a[text()=<value>']"
+        },
+        {"name": "signup",
+          "xpath": "//button[@title='Sign up']"
+        },
+        {"name": "continue",
+          "xpath": "//button[text()='Continue']"
+        },
+        {
+          "name": "headergreeting",
+          "xpath": "//*[@id='desktop-user-greeting']/span"
+        },
+        {
+          "name": "headerusername",
+          "xpath": "//*[@id=\"desktop-user-greeting\"]/button"
+        },
+        {
+          "name": "logout",
+          "xpath": "//a[@title=\"Logout\"]"
+        },
+        {
+          "name": "userprofile",
+          "xpath": "//*[@id=\"desktop-user-greeting\"]/button"
+        },
+        {
+          "name": "degreelistheader",
+          "xpath": "//h1[contains(text(), 'Showing ')]"
+        },
+        {
+          "name": "liveAgentChat",
+          "xpath": "//div[@id='liveagent_invite_button_5730e000000PBjE']/img[1]"
+        }
+      ]
+    },
+    "Sign-Up":
+    {
+      "elements": [
+        {
+          "name": "fieldLabel",
+          "xpath": "./../legend"
+        },
+        {
+          "name": "validationerror",
+          "xpath": "./../div"
+        },
+        {
+          "name":"firstname",
+          "label": "First Name",
+          "xpath": "//input[@id='sFirstName']",
+          "data": "Shelly"
+        },
+        {
+          "name": "lastname",
+          "label": "Last Name",
+          "xpath": "//input[@id='sLastName']",
+          "data": "Cooper"
+        },
+        {
+          "name": "email",
+          "label": "Email Address",
+          "xpath": "//input[@id='sEmail']",
+          "data": "Cooper005@test.com"
+        },
+        {
+          "name": "password",
+          "label": "Password",
+          "xpath": "//input[@id='sPassword']",
+          "data": "testcooper"
+        },
+        {
+          "name": "createAccount",
+          "xpath": "//button[@title='Create your account']"
+        },
+        {
+          "name": "privacylink",
+          "xpath": "//a[text()='Privacy Policy']"
+        },
+        {
+          "name": "termsconditions",
+          "xpath": "//a[text()=' Terms of Use ']"
+        }
+      ]
+    },
+    "RFI": {
+      "elements": [
+        {
+          "name": "degreeLevel",
+          "type": "dropdown",
+          "label": "What type of degree do you want to earn?",
+          "xpath": "//select[@id='degreeLevel']"
+        },{
+          "name": "fieldOfStudy",
+          "type": "dropdown",
+          "label": "What field do you want to study?",
+          "xpath": "//select[@id='field']"
+        },{
+          "name": "intrestProgram",
+          "type": "dropdown",
+          "label": "What program are you interested in?",
+          "xpath": "//select[@id='program']"
+        },{
+          "name": "firstName",
+          "type": "textbox",
+          "label": "First Name",
+          "xpath": "//input[@id='firstName']"
+        },{
+          "name": "lastName",
+          "type": "textbox",
+          "label": "Last Name",
+          "xpath": "//input[@id='lastName']"
+        },{
+          "name": "emailAddress",
+          "type": "textbox",
+          "label": "Password",
+          "xpath": "//input[@id='email']"
+        },{
+          "name": "phoneNumber",
+          "type": "textbox",
+          "label": "Password",
+          "xpath": "//input[@id='phone']",
+          "data": "0190151003"
+        },{
+          "name": "country",
+          "type": "dropdown",
+          "label": "Password",
+          "xpath": "//select[@id='countryCode']"
+        },{
+          "name": "zipcode",
+          "type": "textbox",
+          "label": "Zip Code",
+          "xpath": "//input[@id='zipCode']"
+        },{
+          "name": "levelOfEducation",
+          "type": "dropdown",
+          "label": "Password",
+          "xpath": "//select[@id='educationLevel']"
+        },{
+          "name": "pursuingDegree",
+          "type": "dropdown",
+          "label": "Password",
+          "xpath": "//select[@id='why']"
+        },{
+          "name": "question",
+          "type": "dropdown",
+          "label": "Password",
+          "xpath": "//select[@id='questions']"
+        }, {
+          "name": "WAS",
+          "type": "checkbox",
+          "xpath": "//label[@for='rfiYesAppointment']"
+        }, {
+          "name": "contactCheckBox",
+          "type": "checkbox",
+          "xpath": "//label[contains(text(),'I consent to receiving SMS/MMS messages generated')]"
+        },  {
+          "name": "submitRequest",
+          "xpath": "//button[text()='Submit request']"
+        }, {
+          "name": "thankYou",
+          "xpath": "//div[@class='section visible']//following::h1[text()='Thank you']"
+        },{
+          "name": "closeThankYou",
+          "xpath": "//div[@class='modal visible rfi']//div//following::div[text()='+']"
+        },{
+          "name": "additionalProgram",
+          "xpath": "//form[@class='relatedForm']//following::dt[contains(text(),'onClickSubmitProgram')]"
+        },{
+          "name": "sendInformation",
+          "xpath": "//button[contains(text(),'Yes, send information')]"
+        }, {
+          "name": "additionalprogramthankyou",
+          "xpath": "//button[contains(text(),'No, thank you')]"
+        }
+      ]
+    }
+  }
+}
